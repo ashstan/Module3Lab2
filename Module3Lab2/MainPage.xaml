@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module3Lab2.MainPage">
+
+    <StackLayout>
+
+        <Label Text="True/False Quiz" FontSize="40" HorizontalOptions="Center" TextColor="Black"/>
+
+        <Label x:Name="questionText" FontSize="30" HorizontalOptions="Center" Margin="0,0,0,6"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button x:Name="True"  Text="True" Clicked="ClickedTrue" Padding="30,10,30,10" Background="#1890d6" CornerRadius="6" FontSize="25"/>
+            <Button Grid.Column="1" x:Name="False" Text="False" Clicked="ClickedFalse" Padding="30,10,30,10" Background="#d61835" CornerRadius="6" FontSize="25"/>
+        </StackLayout>
+        
+
+    </StackLayout>
+
+</ContentPage>
